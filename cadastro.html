@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 100px;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    a {
+      text-decoration: none;
+      color: #007BFF;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+   <div class="quadra"><h1>Cadastro</h1>
+  <form action="#" method="post">
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="course">Curso desejado:</label>
+    <select id="course" name="course" required>
+      <option value="AssistenteAdministrativo">Assistente Administrativo</option>
+      <option value="TecnicoemContabilidade">Tecnico em Contabilidade</option>
+      <option value="RecursosHumanos">Recursos Humanos</option>
+      <option value="OperadordeComputador">Operador de Computador</option>
+      <option value="TecnicasemVendas">Tecnicas em Vendas</option>
+
+    
+    </select>
+
+    <label for="message">Mensagem:</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <a href="pagina_confirmacao.html">Enviar</a>
+  </form>
+  </div>
+</body>
+</html>
